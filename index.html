@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сюрприз</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button id="show-pic-btn">Нажми на меня</button>
+
+    <div id="image-container" class="hidden">
+        <img src="photo.jpg" alt="Сюрприз">
+    </div>
+
+    <script>
+        const btn = document.getElementById('show-pic-btn');
+        const imgContainer = document.getElementById('image-container');
+
+        btn.addEventListener('click', () => {
+            imgContainer.classList.remove('hidden');
+            btn.style.display = 'none';
+        });
+    </script>
+
+</body>
+</html>
